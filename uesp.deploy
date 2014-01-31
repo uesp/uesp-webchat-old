@@ -1,0 +1,12 @@
+
+name = uesp.webchat
+repository = https://code.google.com/p/uesp.webchat
+staged = true
+
+ignore = .hg*
+ignore = *.deploy
+
+dest = content3.uesp.net:/home/uesp/webchat/
+
+chown_source = :uespadmin -R ./
+chmod_source = g+rw -R ./
