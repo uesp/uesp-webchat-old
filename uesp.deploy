@@ -5,8 +5,11 @@ staged = true
 
 ignore = .hg*
 ignore = *.deploy
+ignore = *.initd
 
 dest = content3.uesp.net:/home/uesp/webchat/
 
 chown_source = :uespadmin -R ./
 chmod_source = g+rw -R ./
+
+manualcopy = all: qwebirc.initd /etc/init.d/qwebirc
